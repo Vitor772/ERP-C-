@@ -1,0 +1,18 @@
+﻿@model ProdutoModel
+
+@{
+    ViewData["Title"] = "Editar Estoque";
+}
+
+
+<form asp-controller="Estoque" asp-action="Alterar" method="post">
+    <input type="hidden" asp-for="Id"/>
+
+<input type="text" asp-for="NomeFornecedor" class="form-control" placeholder="Holer"><br>
+
+<button type="submit" class="btn btn-primary btn-block">Editar</button>
+<a class="btn btn-outline-secondary btn-block" asp-controller="Estoque" asp-action="Index"  role="button">Voltar</a>
+
+<a class="btn btn-outline-secondary btn-block" asp-action="Apagar" asp-controller="Estoque" asp-route-id="@Model.Id"  role="button">Deletar</a>
+</form>
+

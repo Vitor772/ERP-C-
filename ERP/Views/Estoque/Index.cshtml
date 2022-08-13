@@ -1,0 +1,21 @@
+﻿@model List<ProdutoModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4"></h1>
+ 
+</div>
+
+   @if (Model != null && Model.Any())
+    {
+        foreach (ProdutoModel produto in Model)
+        {
+            <p>Produtos Chegando: @produto.NomeFornecedor</p>
+            <a role="button" asp-route-id="@produto.Id"asp-controller="Estoque" asp-action="Editar">Editar</a>
+            
+        }
+    }
+         <a role="button" asp-controller="Estoque" asp-action="Criar">Criar</a>
+
