@@ -9,6 +9,6 @@ namespace ERP.Repositorio
         UsuarioModel Adicionar(UsuarioModel produto);
         List<UsuarioModel> BuscarTodos();
         UsuarioModel Atualizar(UsuarioModel produto);
-        bool Apagar(int ids);
+        bool Apagar(int id);
     }
 }
