@@ -387,3 +387,4 @@ C:\Users\Vitor\Desktop\ERP\ERP\obj\Debug\net5.0\refint\ERP.dll
 C:\Users\Vitor\Desktop\ERP\ERP\obj\Debug\net5.0\ERP.pdb
 C:\Users\Vitor\Desktop\ERP\ERP\obj\Debug\net5.0\ERP.genruntimeconfig.cache
 C:\Users\Vitor\Desktop\ERP\ERP\obj\Debug\net5.0\ref\ERP.dll
+C:\Users\Vitor\Desktop\ERP\ERP\obj\Debug\net5.0\Razor\Views\Usuario\Index.cshtml.g.cs

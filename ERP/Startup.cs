@@ -30,6 +30,7 @@ namespace ERP
             services.AddEntityFrameworkSqlServer()
                 .AddDbContext<BancoContext>(o => o.UseSqlServer(Configuration.GetConnectionString("DataBase")));
             services.AddScoped<IEstoqueRepositorio, EstoqueRepositorio>();
+            services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

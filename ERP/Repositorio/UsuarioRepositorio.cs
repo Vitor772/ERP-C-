@@ -14,6 +14,11 @@ namespace ERP.Repositorio
             _bancoContext = bancoContext;
         }
 
+        public UsuarioModel BuscarPorID(int id)
+        {
+            return _bancoContext.Usuarios.FirstOrDefault(x => x.Id == id);
+        }
+
         public List<UsuarioModel> BuscarTodos()
         {
             return _bancoContext.Usuarios.ToList();
@@ -39,6 +44,8 @@ namespace ERP.Repositorio
             if (usuarioDB == null) throw new System.Exception("Houve um erro");
 
             usuarioDB.Nome = usuario.Nome;
+            usuarioDB.Email = usuario.Email;
+            usuarioDB.Login = usuario.Login;
 
             _bancoContext.Usuarios.Update(usuarioDB);
             _bancoContext.SaveChanges();

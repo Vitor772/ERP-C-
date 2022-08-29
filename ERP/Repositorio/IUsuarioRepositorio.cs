@@ -5,7 +5,7 @@ namespace ERP.Repositorio
 {
     public interface IUsuarioRepositorio
     {
-        UsuarioModel ListarPorId(int id);
+        UsuarioModel BuscarPorID(int id);
         UsuarioModel Adicionar(UsuarioModel produto);
         List<UsuarioModel> BuscarTodos();
         UsuarioModel Atualizar(UsuarioModel produto);
